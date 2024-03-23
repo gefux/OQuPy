@@ -16,11 +16,11 @@ import itertools
 from time import time
 from pkg_resources import get_distribution
 from platform import python_version
-from pprint import pprint
+import sys
+sys.path.insert(0,'.')
+import oqupy
 
-
-target_modules = ['oqupy',
-                  'numpy',
+target_modules = ['numpy',
                   'scipy',
                   'tensornetwork',
                   'matplotlib',
@@ -31,6 +31,7 @@ def make_meta(function, parameters):
                    for module in target_modules}
     return {'time': time(),
             'python': python_version(),
+            'oqupy': oqupy.__version__,
             'modules': module_info,
             'name': function.__name__,
             'parameters': parameters,
@@ -52,7 +53,6 @@ def run_all(tests, verbose=True):
                     print(f"### parameter set {j+1} of {len(param_comb)}:")
                 result = performance_function(*params)
                 result['metadata'] = make_meta(performance_function, params)
-                pprint(result)
                 results.append(result)
             results_list.append(results)
         results_list_list.append(results_list)
