@@ -1,0 +1,26 @@
+name: Test Python package with tox
+
+on:
+  push:
+    branches: [ "pr/continuous_integration" ]
+  pull_request:
+    branches: [ "pr/continuous_integration" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.10"]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install tox
+        run: pip install tox
+      - name: Run tox
+        run: tox
