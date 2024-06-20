@@ -1,4 +1,4 @@
-name: Test Python package with tox.
+name: build
 
 on: [push, workflow_dispatch]
 
@@ -20,3 +20,7 @@ jobs:
         run: pip install tox
       - name: Run tox
         run: tox
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4.0.1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
