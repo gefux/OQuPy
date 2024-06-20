@@ -8,6 +8,7 @@ permissions:
   contents: read
 
 jobs:
+
   release-build:
     runs-on: ubuntu-latest
 
@@ -30,6 +31,7 @@ jobs:
           path: dist/
 
   pypi-publish:
+    environment: production
     runs-on: ubuntu-latest
     needs:
       - release-build
