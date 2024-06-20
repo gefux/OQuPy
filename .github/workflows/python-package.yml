@@ -1,6 +1,6 @@
 name: Test Python package with tox.
 
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 
 jobs:
   build:
