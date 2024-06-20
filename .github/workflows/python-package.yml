@@ -1,10 +1,6 @@
 name: Test Python package with tox.
 
-on:
-  push:
-    branches: [ "pr/continuous_integration" ]
-  pull_request:
-    branches: [ "pr/continuous_integration" ]
+on: workflow_dispatch
 
 jobs:
   build:
