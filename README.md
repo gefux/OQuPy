@@ -4,9 +4,10 @@
 
 **A Python 3 package to efficiently compute non-Markovian open quantum systems.**
 
+[![build](https://github.com/gefux/OQuPy/actions/workflows/python-package.yml/badge.svg?branch=pr%2Fcontinuous_integration)](https://github.com/gefux/OQuPy/actions/workflows/python-package.yml)
+[![codecov](https://codecov.io/github/gefux/OQuPy/graph/badge.svg?token=00AQJ8UQH1)](https://codecov.io/github/gefux/OQuPy)
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/tempoCollaboration/OQuPy/main?filepath=tutorials%2Fquickstart.ipynb)
-[![Build Status](https://app.travis-ci.com/tempoCollaboration/OQuPy.svg?branch=main)](https://app.travis-ci.com/tempoCollaboration/OQuPy)
-[![codecov](https://codecov.io/gh/tempoCollaboration/OQuPy/branch/main/graph/badge.svg)](https://codecov.io/gh/tempoCollaboration/OQuPy)
 [![Documentation Status](https://readthedocs.org/projects/oqupy/badge/?version=latest)](https://oqupy.readthedocs.io/en/latest/?badge=latest)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/tempoCollaboration/OQuPy/blob/main/CODE_OF_CONDUCT.md)
 [![DOI](https://www.zenodo.org/badge/244404030.svg)](https://www.zenodo.org/badge/latestdoi/244404030)
