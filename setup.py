@@ -40,7 +40,7 @@ with open(os.path.join(here,"requirements.txt"), "r") as requirements_file:
 
 
 setup(
-    name='oqupy',
+    name='oqupy-gefux',
     version=__version__,
     url='http://github.com/tempoCollaboration/OQuPy',
     author='TEMPO Collaboration',
